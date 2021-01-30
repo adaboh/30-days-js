@@ -1,0 +1,7 @@
+/css/main.css.map
+package*
+/img
+/node_modules
+**/node_modules
+/sass/
+/lookInto/
