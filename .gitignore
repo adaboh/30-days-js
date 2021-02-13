@@ -1,7 +1,5 @@
 /css/main.css.map
-package*
-/img
+package-lock*
 /node_modules
 **/node_modules
-/sass/
-/lookInto
+Reference.md*
