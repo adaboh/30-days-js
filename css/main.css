@@ -8,25 +8,27 @@
 
 html,
 body {
-  height: 100vh; }
+  height: 100vh;
+  font-family: sans-serif, Arial, Helvetica, sans-serif; }
 
 html {
   font-family: "helvetica neue";
   font-size: 10px; }
 
 body {
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/image-3.jpg);
+  flex-direction: column;
+  background-image: url(../img/background-3.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat; }
 
 .clock {
   width: 30rem;
   height: 30rem;
-  border: 14px solid grey;
+  border: 14px solid steelblue;
   border-radius: 50%;
   position: relative;
   padding: 2rem; }
@@ -34,37 +36,57 @@ body {
 .clock-face {
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  transform: translateY(-3px);
+  /* account for the height of the clock hands */ }
+  .clock-face::after {
+    display: block;
+    content: " ";
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .hand {
   width: 50%;
-  height: 5px;
-  background-color: black;
+  height: 7px;
+  background-color: transparent;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
-  transform: rotate(90deg); }
-  .hand::after {
+  transform: rotate(90deg);
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  border-radius: 5px; }
+  .hand::before {
     content: "";
-    width: 20px;
-    height: 20px;
-    background: magenta;
     display: block;
-    top: -8px;
-    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
     position: absolute;
-    border-radius: 50%;
-    transform-origin: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    top: 0;
+    right: 0;
+    border-radius: 5px; }
   .hand--secs {
-    transform: rotate(45deg); }
-    .hand--secs::after {
-      background: transparent; }
-  .hand--min {
-    transform: rotate(60deg); }
-    .hand--min::after {
-      background: transparent; }
+    height: 3px; }
+    .hand--secs::before {
+      background-color: tomato; }
+  .hand--hour::before {
+    width: 75%; }
+
+.no-transition {
+  transition: none; }
+
+.clock-time {
+  margin: 2rem 0;
+  font-size: 4rem;
+  color: yellow; }
+  .clock-time--secs {
+    color: tomato; }
 
 /*# sourceMappingURL=main.css.map */
