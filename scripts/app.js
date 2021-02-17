@@ -12,7 +12,7 @@ const timeSecs = document.querySelector(".clock-time--secs");
 
 //* Digital Time funtion -finction Expression
 const setDigitalTime = function (hour, minute, second) {
-  timeHour.textContent = hour;
+  timeHour.textContent = pad(hour);
   timeMins.textContent = pad(minute);
   timeSecs.textContent = pad(second);
 };
