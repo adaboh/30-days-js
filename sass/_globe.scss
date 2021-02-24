@@ -1,35 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
   font-size: 10px;
   background-image: url(../img/background.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 body {
   font-family: "Ubuntu", sans-serif;
-  color: #fff; }
+  color: #fff;
+  // overflow: hidden;
+}
 
 .key__container {
   display: flex;
   align-items: center;
   min-height: 100vh;
   justify-content: space-around;
-  margin: 1rem; }
+  margin: 1rem;
+
+
   @media only screen and (min-width: 601px) {
-    .key__container {
-      justify-content: center;
-      font-size: 1.5rem;
-      padding: 1rem 2rem; } }
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
   @media only screen and (min-width: 1210px) {
-    .key__container .row {
+    & .row {
       display: flex;
-      justify-content: center; } }
+      justify-content: center;
+    }
+  }
+}
 
 .key__wrap {
   text-align: center;
@@ -45,8 +55,9 @@ body {
   background-color: rgba(0, 0, 0, 0.95);
   position: relative;
   border: 3px solid transparent;
-  border-radius: 3px; }
-  .key__wrap::before {
+  border-radius: 3px;
+
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -56,24 +67,30 @@ body {
     z-index: -1;
     margin: -3px;
     border-radius: inherit;
-    background: linear-gradient(to right, #1a2980, #26d0ce); }
+    background: linear-gradient(to right, #1a2980, #26d0ce);
+  }
+
   @media only screen and (min-width: 601px) {
-    .key__wrap {
-      width: 11rem;
-      padding: 2rem 0.5rem;
-      font-size: 2rem; } }
+    width: 11rem;
+    padding: 2rem 0.5rem;
+    font-size: 2rem;
+  }
+}
 
 .key__type {
   display: block;
-  font-size: 4rem; }
+  font-size: 4rem;
+}
 
 .key__sound--name {
   font-size: 1.2rem;
-  color: #ffc600; }
+  color: #ffc600;
+}
 
 .playing {
   border-color: #1a2980;
-  box-shadow: 0 0 0 2px rgba(38, 208, 206, 0.6); }
+  box-shadow: 0 0 0 2px rgba(38, 208, 206, 0.6);
+}
 
 .btn {
   color: #fff;
@@ -85,6 +102,6 @@ body {
   margin-left: 20rem;
   padding: 1rem;
   border-radius: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-/*# sourceMappingURL=main.css.map */

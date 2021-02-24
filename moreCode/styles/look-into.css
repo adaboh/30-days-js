@@ -3,16 +3,10 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  // background-color: #ccc;
-}
+  box-sizing: border-box; }
 
 h1 {
-  text-align: center;
-}
+  text-align: center; }
 
 .btn {
   font-size: 1.5rem;
@@ -23,17 +17,14 @@ h1 {
   display: block;
   padding: 0.5rem 1rem;
   max-width: max-content;
-  transition: all 250ms ease-in;
-}
+  transition: all 250ms ease-in; }
 
 .btn:hover {
   background-color: steelblue;
-  color: #fff;
-}
+  color: #fff; }
 
 .divy {
   border: 1px solid #000;
   margin: 2rem;
   padding: 0.5rem;
-  cursor: pointer;
-}
+  cursor: pointer; }
