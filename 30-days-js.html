@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JS30 Clock: Day 2</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
 
-    <div class="clock">
-        <div class="hand hand--hour" data-hour></div>
-        <div class="hand hand--mins" data-mins></div>
-        <div class="hand hand--secs" data-secs></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JS30 CSS VARIABLES: Day 3</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-        <div class="number number1">1</div>
-        <div class="number number2">2</div>
-        <div class="number number3">3</div>
-        <div class="number number4">4</div>
-        <div class="number number5">5</div>
-        <div class="number number6">6</div>
-        <div class="number number7">7</div>
-        <div class="number number8">8</div>
-        <div class="number number9">9</div>
-        <div class="number number10">10</div>
-        <div class="number number11">11</div>
-        <div class="number number12">12</div>
+<body>
+  <div class="container">
+    <h2>
+      Update CSS Variables and
+      <span class="h1">JS</span>
+    </h2>
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px" />
+
+      <label for="blur">Blur:</label>
+      <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px" />
+
+      <label for="base">Base Color</label>
+      <input type="color" id="base" name="base" value="#ffc600" />
     </div>
-   
-    
+    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500"" alt="">
 
-    <script src="scripts/app.js"></script>
-    
-  </body>
+      <div class=" wrap">
+    <input type="color" name="color" id="" class="wrap-color" value="#ffffff" data-suffix="px">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita unde placeat molestiae! Est, quidem!</p>
+  </div>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+
 </html>
