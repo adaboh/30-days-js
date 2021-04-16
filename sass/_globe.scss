@@ -23,38 +23,3 @@ body {
   font-weight: 100;
   font-size: 2em;
 }
-
-.container {
-  padding-top: 2%;
-  width: 80%;
-  margin: auto;
-}
-
-.h1 {
-  color: var(--base);
-}
-
-.controls {
-  margin-bottom: 50px;
-}
-
-input {
-  width: 100%;
-}
-
-img {
-  background-color: var(--base);
-  padding: var(--spacing);
-  filter: blur(var(--blur));
-  max-width: 100%;
-}
-
-//! changing css variables on individual elements 
-.wrap-color{
-  width: 10%;
-}
-
-.wrap {
-  --color:#fff;
-  color: var(--color);
-}
