@@ -4,8 +4,8 @@ const inputs = document.querySelectorAll(".container input");
 function handleInput() {
   const suffix = this.dataset.sizing || "";
   const hightLight = document.querySelector(".h1");
-  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
-  hightLight.style.color = `--${this.value}`
+  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+  hightLight.style.color = `--${this.value}`;
   // console.log(this.dataset)
 }
 
@@ -17,11 +17,8 @@ inputs.forEach((input) => {
   input.addEventListener("change", handleInput);
 });
 
-
-
 const inputColor = document.querySelector(".wrap-color");
-inputColor.addEventListener("change", function(){
-  const wrap  = document.querySelector(".wrap")
-  wrap.style.setProperty(`--${this.name}`, this.value)
- 
-})
+inputColor.addEventListener("change", function () {
+  const wrap = document.querySelector(".wrap");
+  wrap.style.setProperty(`--${this.name}`, this.value);
+});
