@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-compile": "node-sass --watch sass -o css --source-map true",
-    "sass-more": "node-sass --watch moreCode/look-into.scss -o moreCode/styles",
+    "sass-compile": "node-sass --watch sass -o css --source-map true -q",
+    "sass-more": "node-sass --watch moreCode/look-into.scss -o moreCode/styles -q",
     "devserver": "live-server --port=3030 -q",
     "start": "npm-run-all --parallel devserver sass-more sass-compile"
-   
   },
   "author": "Kae",
   "license": "MIT",

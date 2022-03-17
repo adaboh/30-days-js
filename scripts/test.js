@@ -30,10 +30,10 @@ keyWrap.forEach(function (key) {
 
 keyWrap.forEach((key) => {
   const audio = document.querySelector(`audio[data-key="${key.dataset.key}"]`);
-  
+
   key.addEventListener("click", (e) => {
     audio.currentTime = 0;
     audio.play();
-    key.classList.add("playing")
+    key.classList.add("playing");
   });
 });

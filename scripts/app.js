@@ -1,7 +1,5 @@
 //* Day 1 - JS Drum Kit
 
-
-
 function playSound(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
@@ -25,8 +23,6 @@ function removePlaying(e) {
 
 window.addEventListener("keydown", playSound);
 
-
-
 const keyWrap = document.querySelectorAll(".key__wrap");
 
 keyWrap.forEach((key) => {
@@ -41,7 +37,3 @@ keyWrap.forEach(function (key) {
     key.classList.add("playing");
   });
 });
-
-
-
-
