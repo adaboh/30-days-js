@@ -8,13 +8,12 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 10px;
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-}
-
 body {
   font-family: "Ubuntu", sans-serif;
-  color: #fff;
+  background-color: steelblue;
+}
+
+h1 {
+  padding: 2rem 0;
+  text-align: center;
 }

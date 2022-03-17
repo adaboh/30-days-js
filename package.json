@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-compile": "node-sass --watch sass -o css --source-map true",
-    "devserver": "live-server --port=3030 -q",
+    "sass-compile": "node-sass --watch sass -o css --source-map true -q",
+    "devserver": "live-server --port=3030 --no-browser -q",
     "start": "npm-run-all --parallel devserver sass-compile"
   },
   "author": "Kay",

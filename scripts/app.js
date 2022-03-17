@@ -1,1 +1,1 @@
-console.log("Welcome to 100 days of js")
+console.log("Welcome to 30 days of js");
